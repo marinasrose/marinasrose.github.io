@@ -1,0 +1,190 @@
+header {
+    margin: auto;
+}
+
+
+/* LOGO SECTION */
+.logo {
+    text-align: center;
+    margin: 20px;
+}
+
+/* NAVIGATION BAR (Links + Search Aligned) */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 40px; /* Space between links and search bar */
+    padding: 10px 10px; 
+}
+
+/* NAV LINKS (Facebook, LinkedIn, Worry Monster) */
+.nav > ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav a {
+    text-decoration: none;
+    color: inherit; /* Keeps default text color or allows hover styling */
+    font-size: 18px;
+}
+
+.nav a.active {
+  color: #4b0082;              /* deep purple accent */
+  font-weight: bold;
+  border-bottom: 2px solid #4b0082;
+}
+
+/* === DROPDOWN MENU === */
+.dropdown {
+  position: relative;     /* positions child menu relative to this */
+}
+
+.dropdown-content {
+  display: none;          /* 🔹 Hide by default */
+  position: absolute;
+  top: 100%;              /* directly below the parent link */
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  min-width: 180px;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* individual dropdown links */
+.dropdown-content li a {
+  display: block;
+  padding: 10px 15px;
+  color: #4b0082;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f3eaff; /* light purple hover */
+}
+
+/* show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* --- 🔍 SEARCH BAR (FIXED & CLEAN VERSION) --- */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input Field */
+.search-container input {
+  color: #4b0082;
+  padding: 6px 38px 6px 12px; /* ✅ adjust right padding for icon width */
+  border: 1px solid #888;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+  width: 200px;              /* ✅ consistent field width */
+  box-sizing: border-box;
+  margin-left: 0;            /* ✅ remove large offset */
+}
+
+/* Search Icon Button */
+/* .search-container .search-btn {
+  position: absolute; */
+  /* right: 8px;               ✅ positions inside input edge */
+  /* top: 20%; */
+  /* transform: translateY(-50%); ✅ vertically centers icon */
+  /* background: url('magnifying_glass_1.png') no-repeat center; */
+  /* background-size: 14px;
+  border: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  padding: 0;
+} */
+
+.pic-small {
+   max-height: 360px;
+}
+
+.round-corner {
+        border-radius: 10%;
+    }
+
+.centered {
+    text-align: center;
+}
+
+/* === NEW: centers the person card === */
+.person-wrapper {
+  display: flex;             /* ✅ enables flexbox layout */
+  justify-content: center;   /* ✅ horizontally centers the card */
+  align-items: flex-start;       /* ✅ vertically centers if height allows */
+  min-height: auto;
+  padding-top: 30px;         /* ✅ makes it fill the full viewport height */
+  padding-bottom: 40px;           /* ✅ adds a little breathing room */
+}
+
+
+/* === INDIVIDUAL CARDS === */
+.person-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* === IMAGE === */
+.person-card img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 100%;
+  height: 340px;           /* consistent height still */
+  object-fit: contain;     /* ✅ fits full image inside area */
+  /* object-fit: scale-down; */
+
+  object-position: center; /* ✅ keeps it centered neatly */
+  background-color: #fff;  /* ✅ fills any empty space if image is narrower */
+  border-radius: 12px;
+}
+
+/* === TEXT === */
+.person-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.person-story {
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 15px;
+  max-width: 90%;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 20px;
+  height: 100%;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)),
+    url(pics/colorful_yarn_balls.jpg) no-repeat center center fixed;
+  background-size: cover; /* ✅ shows whole image */
+  background-color: #fff;   /* optional fill behind image */
+}
