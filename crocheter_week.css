@@ -184,7 +184,7 @@ body {
   height: 100%;
   background:
     linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)),
-    url(pics/colorful_yarn_balls.jpg) no-repeat center center fixed;
+    url(colorful_yarn_balls.jpg) no-repeat center center fixed;
   background-size: cover; /* ✅ shows whole image */
   background-color: #fff;   /* optional fill behind image */
 }
