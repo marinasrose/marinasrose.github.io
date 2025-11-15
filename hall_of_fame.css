@@ -5,18 +5,26 @@ header {
 
 /* LOGO SECTION */
 .logo {
-    text-align: center;
-    margin: 20px;
+ background: rgba(255, 255, 255, 0.7);
+ border-radius: 12px;
 }
 
 /* NAVIGATION BAR (Links + Search Aligned) */
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: auto;
-    gap: 40px; /* Space between links and search bar */
-    padding: 10px 10px; 
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between links and search bar */  
+  margin:  auto;
+  padding: 12px 24px; 
+  background: rgba(255, 255, 255, 0.7);  
+    /* optional nice extras */
+  backdrop-filter: blur(6px);     /* subtle glass effect */
+  border-radius: 12px;             /* smooth edges */
+  width: fit-content;
+}
+
+nav a:hover {
+  color: rgb(209, 72, 209);
 }
 
 /* NAV LINKS (Facebook, LinkedIn, Worry Monster) */
@@ -27,6 +35,16 @@ header {
   gap: 40px;
   margin: 0;
   padding: 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* keeps logo + nav centered as a whole */
+  gap: 20px;               /* spacing between logo & nav */
+  width: fit-content;
+  margin: auto;
+  padding-top: 50px;
 }
 
 .nav a {
@@ -82,10 +100,8 @@ header {
 
 /* --- 🔍 SEARCH BAR (FIXED & CLEAN VERSION) --- */
 .search-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 30px;
+  /* 15-30px */
 }
 
 /* Input Field */
@@ -119,12 +135,12 @@ header {
 
 
 .pic-small {
-   max-height: 360px;
+  max-height: 360px;
 }
 
 .round-corner {
-        border-radius: 10%;
-    }
+  border-radius: 10%;
+}
 
 
 .centered {
@@ -142,12 +158,37 @@ header {
 
 /* === INDIVIDUAL CARDS === */
 .person-card {
-  background: #fff;
+  /* background: #fff; */
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   max-width: 400px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+}
+
+.hof-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  /* padding: 20px 20px 40px; */
+  max-width: 1400px;
+  margin: 40px auto;         /* centers the whole section + spacing from header */
+}
+
+
+.title {
+  text-align: center;  
+  font-size: 18px;
+  font-family: 'Georgia', serif;
+  /* margin-bottom: 20px; */
+  padding: 15px;
+  padding-bottom: 10px 0;
+}
+
+.title p {
+  margin: auto; 
+  font-size: 16px;
+  font-style: italic;
 }
 
 /* === IMAGE === */
@@ -160,7 +201,8 @@ header {
   /* object-fit: scale-down; */
 
   object-position: center; /* ✅ keeps it centered neatly */
-  background-color: #fff;  /* ✅ fills any empty space if image is narrower */
+  /* background-color: #fff;   */
+  /* ✅ fills any empty space if image is narrower */
   border-radius: 12px;
 }
 
@@ -168,16 +210,20 @@ header {
 .person-name {
   font-weight: bold;
   margin-bottom: 8px;
+  font-family: 'Georgia', serif;
 }
 
 .person-story {
   text-align: left;
-  margin: 0 auto;
-  max-width: 90%;
+  margin-top: 20px;
+  margin-left: 60px;
+  max-width: 70%;
   line-height: 1.5;
+  font-size: 18px;
 }
 
 body {
+  font-family: 'Georgia', serif;
   margin: 20px;
   height: 100%;
   background:

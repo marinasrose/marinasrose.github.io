@@ -1,23 +1,34 @@
 header {
-    margin: auto;
+  margin: auto;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* keeps logo + nav centered as a whole */
+  gap: 20px;               /* spacing between logo & nav */
+  width: fit-content;
+  margin: auto;
+  padding-top: 50px;
+}
 
-/* LOGO SECTION */
 .logo {
-    text-align: center;
-    margin: 20px;
+ background: rgba(255, 255, 255, 0.7);
+ border-radius: 12px;
 }
-
 
 /* NAVIGATION BAR (Links + Search Aligned) */
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: auto;
-    gap: 40px; /* Space between links and search bar */
-    padding: 10px 10px; 
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between links and search bar */  
+  margin:  auto;
+  padding: 12px 24px; 
+  background: rgba(255, 255, 255, 0.7);  
+    /* optional nice extras */
+  backdrop-filter: blur(6px);     /* subtle glass effect */
+  border-radius: 12px;             /* smooth edges */
+  width: fit-content;
 }
 
 /* NAV LINKS (Facebook, LinkedIn, Worry Monster) */
@@ -41,6 +52,10 @@ header {
   color: #4b0082;              /* deep purple accent */
   font-weight: bold;
   border-bottom: 2px solid #4b0082;
+}
+
+nav a:hover {
+  color: rgb(209, 72, 209);
 }
 
 /* === DROPDOWN MENU === */
@@ -83,16 +98,17 @@ header {
 
 /* --- 🔍 SEARCH BAR (FIXED & CLEAN VERSION) --- */
 .search-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 30px;
+  /* 15-30px */
 }
 
 /* Input Field */
 .search-container input {
+  height: 28px;
+  border-radius: 20px;
   color: #4b0082;
-  padding: 6px 38px 6px 12px; /* ✅ adjust right padding for icon width */
+  padding: 4px 38px 4px 12px;    /* keeps icon room if you use it later */
+  /* padding: 6px 38px 6px 12px; ✅ adjust right padding for icon width */
   border: 1px solid #888;
   border-radius: 20px;
   outline: none;
@@ -193,7 +209,7 @@ button {
 }
 
 button:hover {
-  background-color: plum;
+  background-color: rgb(209, 72, 209);
 }
 
 
@@ -210,9 +226,6 @@ button:hover {
     gap: 8px;
   }
 }
-
-
-
 
 body {
   margin: 0;

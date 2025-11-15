@@ -5,19 +5,36 @@ header {
 
 /* LOGO SECTION */
 .logo {
-    text-align: center;
-    margin: 20px;
+ background: rgba(255, 255, 255, 0.7);
+ border-radius: 12px;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* keeps logo + nav centered as a whole */
+  gap: 20px;               /* spacing between logo & nav */
+  width: fit-content;
+  margin: auto;
+  padding-top: 50px;
 }
 
-/* NAVIGATION BAR (Links + Search Aligned) */
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: auto;
-    gap: 40px; /* Space between links and search bar */
-    padding: 10px 10px; 
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between links and search bar */  
+  margin:  auto;
+  padding: 12px 24px; 
+  background: rgba(255, 255, 255, 0.7);  
+    /* optional nice extras */
+  backdrop-filter: blur(6px);     /* subtle glass effect */
+  border-radius: 12px;             /* smooth edges */
+  width: fit-content;
 }
+
+nav a:hover {
+  color: rgb(209, 72, 209);
+}
+
 
 /* NAV LINKS (Facebook, LinkedIn, Worry Monster) */
 .nav > ul {
@@ -82,10 +99,8 @@ header {
 
 /* --- 🔍 SEARCH BAR (FIXED & CLEAN VERSION) --- */
 .search-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 30px;
+  /* 15-30px */
 }
 
 /* Input Field */

@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="hall_of_fame.css">
 </head>
 <body>
-      <header>
-        <div class="logo">
-            <img src="updated_logo.png" alt="Crochet with Marina Logo" height="160">
-        </div>     
-           <nav class="nav">
+      <header class="header-wrapper">
+        <div class="header-content">
+            <div class="logo">
+                <img src="crochet_with_marina_logo_rectangle.png" alt="Crochet with Marina Logo" height="120">
+            </div>     
+        <nav class="nav">
                 <ul>
                     <li><a href="index.html">The Knotty Corner</a></li>
                     <li><a href="crocheter_week.html">Crocheter of the Week</a></li>
@@ -21,46 +22,49 @@
                             <li><a href="pattern_week.html">Pattern of the Week</a></li>
                             <li><a href="pattern_gallery.html">Pattern Gallery</a></li>
                         </ul>
-                        </li>
+                    </li>
                     <li class="dropdown"><a href="#">Quotes ▾</a>
                         <ul class="dropdown-content">                            
                             <li><a href="quote_week.html">Quote of the Week</a></li>
                             <li><a href="quote_gallery.html">Quote Gallery</a></li>
                         </ul>
                         </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 <form class="search-container">
                     <input type="search" name="search" placeholder="Search">   
                     <!-- <button type="submit" class="search-btn"></button>    -->
                 </form>
-            </nav>   
+            </div>
+        </nav>   
     </header>
     <main>
-        <div class="centered">
-            <h1>Hall of Fame</h1>
-            <p>(Previous crocheters of the week.)</p>
+        <div class="hof-card">
+            <div class="title">
+                <h1>Hall of Fame</h1>
+                <p>(Previous crocheters of the week.)</p>
+            </div>
+            <section class="people-gallery">
+                <div class="person-card">
+                    <img class="round-corner pic-small" src="Mama.jpg" alt="A picture of a smiling woman, with her brown hair braided over her shoulder.">
+                    <p class="person-name centered">Jenny S. - Magna, UT</p>
+                    <p class="person-story">She learned to crochet when she was 10 while she was at a youth leader's home. 
+                        Her first crochet project was a covering to go over a wooden hanger.</p>
+                </div>
+                <div class="person-card">
+                    <img class="round-corner pic-small" src="Daniel.jpg" alt="A picture of a smiling man with a mustache, beard, and long, red hair.">
+                    <p class="person-name centered">Daniel H. - Midvale, UT</p>
+                    <p class="person-story">He learned to crochet from his wife. His first crochet project was a Minion.</p>
+                </div>
+                <div class="person-card">
+                    <img class="round-corner pic-small" src="Grammie.png" alt="A picture of a smiling elderly woman, with short, brown hair.">
+                    <p class="person-name centered">Millie H. - Kearns, UT</p>
+                    <p class="person-story">When she was a newlywed, her mother-in-law taught Millie how to crochet. 
+                            However, her mother-in-law was left handed and Millie is right handed, 
+                            so they sat facing each other and Millie learned to crochet that way.</p>
+                </div>
         </div>
-        <section class="people-gallery">
-            <div class="person-card">
-                <img class="round-corner pic-small" src="Mama.jpg" alt="A picture of a smiling woman, with her brown hair braided over her shoulder.">
-                <p class="person-name">Jenny S. - Magna, UT</p>
-                <p class="person-story">She learned to crochet when she was 10 while she was at a youth leader's home. 
-                    Her first crochet project was a covering to go over a wooden hanger.</p>
-            </div>
-            <div class="person-card">
-                <img class="round-corner pic-small" src="Daniel.jpg" alt="A picture of a smiling man with a mustache, beard, and long, red hair.">
-                <p class="person-name">Daniel H. - Midvale, UT</p>
-                <p class="person-story">He learned to crochet from his wife. His first crochet project was a Minion.</p>
-            </div>
-            <div class="person-card">
-                <img class="round-corner pic-small" src="Grammie.png" alt="A picture of a smiling elderly woman, with short, brown hair.">
-                <p class="person-name">Millie H. - Kearns, UT</p>
-                <p class="person-story">When she was a newlywed, her mother-in-law taught Millie how to crochet. 
-                However, her mother-in-law was left handed and Millie is right handed, 
-                so they sat facing each other and Millie learned to crochet that way.</p>
-            </div>
         </section>
     </main>
 </body>

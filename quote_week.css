@@ -3,21 +3,38 @@ header {
 }
 
 
-/* LOGO SECTION */
 .logo {
-    text-align: center;
-    margin: 20px;
+ background: rgba(255, 255, 255, 0.7);
+ border-radius: 12px;
 }
 
-/* NAVIGATION BAR (Links + Search Aligned) */
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: auto;
-    gap: 40px; /* Space between links and search bar */
-    padding: 10px 10px; 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* keeps logo + nav centered as a whole */
+  gap: 20px;               /* spacing between logo & nav */
+  width: fit-content;
+  margin: auto;
+  padding-top: 50px;
 }
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between links and search bar */  
+  margin:  auto;
+  padding: 12px 24px; 
+  background: rgba(255, 255, 255, 0.7);  
+    /* optional nice extras */
+  backdrop-filter: blur(6px);     /* subtle glass effect */
+  border-radius: 12px;             /* smooth edges */
+  width: fit-content;
+}
+
+nav a:hover {
+  color: rgb(209, 72, 209);
+}
+
 
 /* NAV LINKS (Facebook, LinkedIn, Worry Monster) */
 .nav > ul {
@@ -82,10 +99,8 @@ header {
 
 /* --- 🔍 SEARCH BAR (FIXED & CLEAN VERSION) --- */
 .search-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 30px;
+  /* 15-30px */
 }
 
 /* Input Field */
@@ -99,6 +114,49 @@ header {
   width: 200px;              /* ✅ consistent field width */
   box-sizing: border-box;
   margin-left: 0;            /* ✅ remove large offset */
+}
+
+.fix {
+  height: 450px;
+  margin-bottom: 20px;  
+}
+
+.quote-wrapper {
+  display: flex;             /* ✅ enables flexbox layout */
+  justify-content: center;   /* ✅ horizontally centers the card */
+  align-items: flex-start;       /* ✅ vertically centers if height allows */
+  min-height: auto;
+  padding-top: 30px;         /* ✅ makes it fill the full viewport height */
+  padding-bottom: 40px;           /* ✅ adds a little breathing room */
+  margin-bottom: 200px;
+}
+
+.quote-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 475px;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 30px;
+  font-family: 'Georgia', serif;
+}
+
+/* === IMAGE === */
+.quote-card img {
+  display: block;
+  margin: 25px auto;
+  width: 100%;
+  height: 420px;           /* consistent height still */
+  object-fit: contain;     /* ✅ fits full image inside area */
+  /* object-fit: scale-down; */
+  object-position: center; /* ✅ keeps it centered neatly */
+  background-color: #fff;  /* ✅ fills any empty space if image is narrower */
+  border-radius: 12px;
 }
 
 /* Search Icon Button */
